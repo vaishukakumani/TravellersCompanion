@@ -42,7 +42,7 @@ private ItineraryService itineraryService;
  @ResponseBody
   public String checkUser(@RequestParam String userName,@RequestParam String password) {
 	
-	 System.out.println("username is:"+userName);
+	 System.out.println("user is:"+userName);
 	 System.out.println("password is:"+password);
 	 String json= userService.checkUser(userName, password);
 	return json;
